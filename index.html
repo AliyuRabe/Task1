@@ -1,0 +1,37 @@
+ <body>
+  <div class="container">
+    <h1>Language Translator</h1>
+
+    <label for="sourceLang">From:</label>
+    <select id="sourceLang">
+      <option value="auto">Auto Detect</option>
+      <option value="en">English</option>
+      <option value="fr">French</option>
+      <option value="es">Spanish</option>
+      <option value="de">German</option>
+      <option value="ha">Hausa</option>
+      <option value="yo">Yoruba</option>
+    </select>
+
+    <label for="targetLang">To:</label>
+    <select id="targetLang">
+      <option value="fr">French</option>
+      <option value="es">Spanish</option>
+      <option value="de">German</option>
+      <option value="ha">Hausa</option>
+      <option value="yo">Yoruba</option>
+      <option value="en">English</option>
+    </select>
+
+    <label for="inputText">Your Text:</label>
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+    <button onclick="translateText()">Translate</button>
+
+    <p><strong>Translation:</strong></p>
+    <div id="outputText"></div>
+    <button onclick="copyTranslation()">Copy Translation</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
